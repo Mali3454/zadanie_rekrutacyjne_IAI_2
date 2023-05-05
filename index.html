@@ -95,7 +95,7 @@
                     <use href="./assets/arrow-hero-right.svg#arrow-hero-right" />
                 </svg></button>
         </section>
-        <section class="offer">
+        <div class="offer">
             <div class="offer__item">
                 <svg viewBox="0 0 26 38">
                     <use href="./assets/watch-icon.svg#watch" />
@@ -120,10 +120,10 @@
                 </svg>
                 <p class="offer__item-text">Sprawdź opinie o nas</p>
             </div>
-        </section>
-        <section class="products">
+        </div>
+        <div class="products">
             <div id="product-carousel" class="products__carousel">
-                <div id="product-carousel-slide" class="products__item">
+                <div class="products__item">
                     <div class="products__item-image">
                         <picture>
                             <source type="image/webp" srcset="./assets/for-her.webp">
@@ -139,7 +139,7 @@
                         </svg>
                     </button>
                 </div>
-                <div id="product-carousel-slide" class="products__item">
+                <div class="products__item">
                     <div class="products__item-image">
                         <picture>
                             <source type="image/webp" srcset="./assets/for-him.webp">
@@ -156,7 +156,7 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="about">
             <div class="about__image">
                 <picture>
@@ -181,7 +181,7 @@
         <section class="news">
             <h2 class="news__title">Nowości</h2>
             <div class="news__carousel" id="news-carousel">
-                <div class="news__item" id="news-carousel-slide">
+                <div class="news__item">
                     <div class="news__item-image">
                         <picture>
                             <source type="image/webp" srcset="./assets/watch1.webp">
@@ -198,7 +198,7 @@
                     <p class="news__item-price">777,00 zł</p>
                 </div>
 
-                <div class="news__item" id="news-carousel-slide">
+                <div class="news__item">
                     <div class="news__item-image">
                         <picture>
                             <source type="image/webp" srcset="./assets/watch2.webp">
@@ -215,7 +215,7 @@
                 </div>
 
 
-                <div class="news__item" id="news-carousel-slide">
+                <div class="news__item">
                     <div class="news__item-image">
                         <picture>
                             <source type="image/webp" srcset="./assets/watch3.webp">
@@ -231,7 +231,7 @@
                     <p class="news__item-price">5 703,00 zł</p>
                 </div>
 
-                <div class="news__item" id="news-carousel-slide">
+                <div class="news__item">
                     <div class="news__item-image">
                         <picture>
                             <source type="image/webp" srcset="./assets/watch4.webp">
@@ -279,7 +279,7 @@
 
 
 
-        <section class="brands">
+        <div class="brands">
             <div class="brands__image">
                 <picture>
                     <source type="image/webp" srcset="./assets/edox.webp">
@@ -317,7 +317,7 @@
                     <img src="./assets/balticus.png" alt="watch on magazine">
                 </picture>
             </div>
-        </section>
+        </div>
         <section class="newsletter">
             <h2 class="newsletter__title">5% na pierwsze zakupy</h2>
             <p class="newsletter__text">Zapisz sie do newslettera i otrzymaj zniżkę na pierwsze zakupy</p>
@@ -338,10 +338,10 @@
     </main>
     <footer class="footer">
         <div class="footer__item">
-            <div class="footer__item-title" id="footer-title">
+            <div class="footer__item-title">
                 <h2>Moje zamówienie</h2>
             </div>
-            <ul class="footer__item-list" id="footer-list">
+            <ul class="footer__item-list">
                 <li class="footer__item-list-link"><a href="#">Status zamówienia</a></li>
                 <li class="footer__item-list-link"><a href="#">Śledzenie przesyłki</a></li>
                 <li class="footer__item-list-link"> <a href="#">Chcę zareklamować towar</a></li>
@@ -350,10 +350,10 @@
             </ul>
         </div>
         <div class="footer__item">
-            <div class="footer__item-title" id="footer-title">
+            <div class="footer__item-title">
                 <h2>Moje konto</h2>
             </div>
-            <ul class="footer__item-list" id="footer-list">
+            <ul class="footer__item-list">
                 <li class="footer__item-list-link"><a href="#">Zarejestruj się</a></li>
                 <li class="footer__item-list-link"> <a href="#">Moje zamówienia</a></li>
                 <li class="footer__item-list-link"> <a href="#">Koszyk</a></li>
@@ -364,10 +364,10 @@
             </ul>
         </div>
         <div class="footer__item">
-            <div class="footer__item-title" id="footer-title">
+            <div class="footer__item-title">
                 <h2>O nas</h2>
             </div>
-            <ul class="footer__item-list" id="footer-list">
+            <ul class="footer__item-list">
                 <li class="footer__item-list-link"> <a href="#">Informaje o sklepie</a></li>
                 <li class="footer__item-list-link"><a href="#">Wysyłka</a></li>
                 <li class="footer__item-list-link"> <a href="#">Sposób płatnosci i
@@ -375,13 +375,14 @@
                 <li class="footer__item-list-link"> <a href="#">Regulamin</a></li>
                 <li class="footer__item-list-link"> <a href="#">Polityka prywatności</a></li>
                 <li class="footer__item-list-link"> <a href="#">Odstąpienie od umowy</a></li>
+            </ul>
         </div>
-        </ul>
+
         <div class="footer__item">
-            <div class="footer__item-title" id="footer-title">
+            <div class="footer__item-title">
                 <h2>Kontakt</h2>
             </div>
-            <ul class="footer__item-list" id="footer-list">
+            <ul class="footer__item-list">
                 <li class="footer__item-list-link">
                     <p class="footer__contact-text">xxx</p>
                 </li>

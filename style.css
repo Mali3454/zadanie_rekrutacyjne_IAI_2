@@ -131,7 +131,6 @@ ol {
   height: 100vh;
   background: #fff;
   transform: translateX(-200%);
-  transition: transform 1s;
   align-items: center;
   justify-content: start;
   z-index: 1;
@@ -651,6 +650,7 @@ ol {
 }
 .products__item {
   position: relative;
+  width: 100vw;
 }
 .products__item-image img {
   max-height: 250px;
