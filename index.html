@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="banner">
+        <p class="banner__text">Bezpłatne zwroty</p>
+        <p class="banner__text">Darmowa wysyłka od 500 zł</p>
+        <p class="banner__text">Zamów konsultację zegarkową</p>
+    </div>
+    <header class="header">
+        <div class="header__menu">
+            <a href="#" class="header__logo">
+                <picture>
+                    <source type="image/webp" srcset="./assets/logo.webp">
+                    <source type="image/png" srcset="./assets/logo.png">
+                    <img src="./assets/logo.png" alt="logo">
+                </picture>
+            </a>
+            <nav class="header__nav " id="menu">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item-title">Menu</li>
+                    <li class="header__nav-item"><a href='#' class="header__nav-link">Kategorie</a></li>
+                    <li class="header__nav-item"><a href='#' class="header__nav-link">Marki</a></li>
+                    <li class="header__nav-item"><a href='#' class="header__nav-link">Męskie</a></li>
+                    <li class="header__nav-item"><a href='#' class="header__nav-link">Damskie</a></li>
+                    <li class="header__nav-item"><a href='#' class="header__nav-link">Biżuteria</a></li>
+                    <li class="header__nav-item"><a href='#' class="header__nav-link">O Firmie</a></li>
+                    <li class="header__nav-item"><a href='#' class="header__nav-link">Blog</a></li>
+                    <li class="header__nav-item"><a href='#' class="header__nav-link">Kontakt</a></li>
+
+                </ul>
+                <button class="header__nav-list-close" id="closeBtn"><svg viewBox="0 0 24 24">
+                        <use href="./assets/close-icon.svg#close" />
+                    </svg></button>
+            </nav>
+            <div class="header__icon-block">
+                <a href="#" class="header__icon-block-link-find"><svg viewBox="0 0 17 18">
+                        <use href="./assets/find-icon.svg#find" />
+                    </svg></a>
+                <a href="#" class="header__icon-block-link"><svg viewBox="0 0 18 18">
+                        <use href="./assets/account-icon.svg#account" />
+                    </svg></a>
+                <a href="#" class="header__icon-block-link"><svg viewBox="0 0 21 18">
+                        <use href="./assets/heart-icon.svg#heart" />
+                    </svg>
+                    <div class="header__icon-block-link-notification"><span>2</span></div>
+                </a>
+                <a href="#" class="header__icon-block-link"><svg viewBox="0 0 20 18">
+                        <use href="./assets/bag-icon.svg#bag" />
+                    </svg></a>
+            </div>
+        </div>
+        <div class="header__mobile-menu">
+            <div class="header__mobile-menu-hamburger">
+                <button class="header__mobile-menu-hamburger-button" id="menuBtn">
+                    <svg viewBox="0 0 32 32">
+                        <use href="./assets/menu-icon.svg#menu" />
+                    </svg>
+                </button>
+
+            </div>
+            <div class="header__mobile-menu-find">
+                <input class="header__mobile-menu-find-input" type="text" id="input1" placeholder="Szukaj">
+                <button class="header__mobile-menu-find-button"><svg viewBox="0 0 17 18">
+                        <use href="./assets/find-icon.svg#find" />
+                    </svg></button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="hero__image">
+                <picture>
+                    <source type="image/webp" srcset="./assets/hero.webp">
+                    <source type="image/png" srcset="./assets/hero.png">
+                    <img src="./assets/hero.png" alt="watch on magazine">
+                </picture>
+            </div>
+            <div class="hero__content">
+                <h2 class="hero__content-text">Elegancja i precyzja</h2>
+                <a href="#" class="hero__content-link">Sprawdź ofertę</a>
+            </div>
+            <button class="hero__arrow left"><svg viewBox="0 0 22 10">
+                    <use href="./assets/arrow-hero-left.svg#arrow-hero-left" />
+                </svg></button>
+            <button class="hero__arrow right"><svg viewBox="0 0 22 10">
+                    <use href="./assets/arrow-hero-right.svg#arrow-hero-right" />
+                </svg></button>
+        </section>
+        <section class="offer">
+            <div class="offer__item">
+                <svg viewBox="0 0 26 38">
+                    <use href="./assets/watch-icon.svg#watch" />
+                </svg>
+                <p class="offer__item-text">Grawerowanie zegarka</p>
+            </div>
+            <div class="offer__item">
+                <svg viewBox="0 0 41 38">
+                    <use href="./assets/gift-icon.svg#gift" />
+                </svg>
+                <p class="offer__item-text">Pakowanie na prezent</p>
+            </div>
+            <div class="offer__item">
+                <svg viewBox="0 0 39 32">
+                    <use href="./assets/card-icon.svg#card" />
+                </svg>
+                <p class="offer__item-text">Kartka z dedykacją</p>
+            </div>
+            <div class="offer__item">
+                <svg viewBox="0 0 47 30">
+                    <use href="./assets/people-icon.svg#people" />
+                </svg>
+                <p class="offer__item-text">Sprawdź opinie o nas</p>
+            </div>
+        </section>
+        <section class="products">
+            <div id="product-carousel" class="products__carousel">
+                <div id="product-carousel-slide" class="products__item">
+                    <div class="products__item-image">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/for-her.webp">
+                            <source type="image/png" srcset="./assetss/for_her.png">
+                            <img src="./assets/for_her.png" alt="watch on magazine">
+                        </picture>
+                    </div>
+                    <a href="" class="products__item-link">
+                        <p class="products__item-text">Dla niej</p>
+                    </a>
+                    <button id="product-arrow-right" class="products__item-arrow left"><svg viewBox="0 0 22 10">
+                            <use href="./assets/arrow-hero-right.svg#arrow-hero-right" />
+                        </svg>
+                    </button>
+                </div>
+                <div id="product-carousel-slide" class="products__item">
+                    <div class="products__item-image">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/for-him.webp">
+                            <source type="image/png" srcset="./assets/for_him.png">
+                            <img src="./assets/for_him.png" alt="watch on magazine">
+                        </picture>
+                    </div>
+                    <a href="" class="products__item-link">
+                        <p class="products__item-text">Dla niego</p>
+                    </a>
+                    <button id="product-arrow-left" class="products__item-arrow right"><svg viewBox="0 0 22 10">
+                            <use href="./assets/arrow-hero-left.svg#arrow-hero-left" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__image">
+                <picture>
+                    <source type="image/webp" srcset="./assets/about.webp">
+                    <source type="image/png" srcset="./assets/about.png">
+                    <img src="./assets/about.png" alt="watch on magazine">
+                </picture>
+            </div>
+            <div class="about__content">
+                <h2 class="about__content-title">O firmie</h2>
+                <p class="about__content-text">Zapraszamy do naszego sklepu internetowego, gdzie znajdziesz zegarki
+                    najwyższej
+                    jakości. Oferujemy szeroki wybór produktów dla mężczyzn i kobiet, wykonanych z najlepszych
+                    materiałów.</p>
+                <p class="about__content-text">
+                    W sklepie znajdziesz zegarki najlepszych marek, takich jak Edox, Atlantic, czy Orient Star. Każdy z
+                    naszych zegarków posiada unikalny styl i jest wyposażony w wiele funkcji, które spełnią oczekiwania
+                    nawet najbardziej wymagających klientów.</p>
+                <a href="#" class="about__content-link">Czytaj więcej</a>
+            </div>
+        </section>
+        <section class="news">
+            <h2 class="news__title">Nowości</h2>
+            <div class="news__carousel" id="news-carousel">
+                <div class="news__item" id="news-carousel-slide">
+                    <div class="news__item-image">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/watch1.webp">
+                            <source type="image/png" srcset="./assetss/watch1.png">
+                            <img src="./assets/watch1.png" alt="watch on magazine">
+                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16">
+                                <use href="./assets/heart2-icon.svg#heart2" />
+                            </svg> </button>
+
+
+                        <p class="news__item-info">Nowość</p>
+                    </div>
+                    <h2 class="news__item-title">Zegarek Orient<br>Mechanical Contemporary Watch<br>RA-AA0C04B19B</h2>
+                    <p class="news__item-price">777,00 zł</p>
+                </div>
+
+                <div class="news__item" id="news-carousel-slide">
+                    <div class="news__item-image">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/watch2.webp">
+                            <source type="image/png" srcset="./assetss/watch2.png">
+                            <img src="./assets/watch2.png" alt="watch on magazine">
+                        </picture> <button class="news__item-like"><svg fill="#fff" viewBox="0 0 18 16">
+                                <use href="./assets/heart2-icon.svg#heart2" />
+                            </svg> </button>
+
+                        <p class="news__item-info">Nowość</p>
+                    </div>
+                    <h2 class="news__item-title">Zegarek Atlantic<br>Worldmaster Automatic<br>51752.41.25G</h2>
+                    <p class="news__item-price">2 703,00 zł</p>
+                </div>
+
+
+                <div class="news__item" id="news-carousel-slide">
+                    <div class="news__item-image">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/watch3.webp">
+                            <source type="image/png" srcset="./assetss/watch3.png">
+                            <img src="./assets/watch3.png" alt="watch on magazine">
+                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16">
+                                <use href="./assets/heart2-icon.svg#heart2" />
+                            </svg> </button>
+
+                        <p class="news__item-info">Nowość</p>
+                    </div>
+                    <h2 class="news__item-title">Zegarek Atlantic<br>Worldmaster Automatic<br>51752.41.25G</h2>
+                    <p class="news__item-price">5 703,00 zł</p>
+                </div>
+
+                <div class="news__item" id="news-carousel-slide">
+                    <div class="news__item-image">
+                        <picture>
+                            <source type="image/webp" srcset="./assets/watch4.webp">
+                            <source type="image/png" srcset="./assetss/watch4.png">
+                            <img src="./assets/watch4.png" alt="watch on magazine">
+                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16">
+                                <use href="./assets/heart2-icon.svg#heart2" />
+                            </svg> </button>
+
+
+                        <p class="news__item-info">Nowość</p>
+                    </div>
+                    <h2 class="news__item-title">Zegarek Orient<br>Mechanical Sports Watch<br>RA-AC0H03B10B</h2>
+                    <p class="news__item-price">703,00 zł</p>
+                </div>
+
+            </div>
+
+            <button id="news-arrow-left" class="news__item-arrow right"><svg viewBox="0 0 22 10">
+                    <use href="./assets/arrow-left.svg#arrow-left" />
+                </svg>
+            </button>
+            <button id="news-arrow-right" class="news__item-arrow left"><svg viewBox="0 0 22 10">
+                    <use href="./assets/arrow-right.svg#arrow-right" />
+                </svg>
+            </button>
+        </section>
+        <section class="blog">
+            <div class="blog__image">
+                <picture>
+                    <source type="image/webp" srcset="./assets/blog.webp">
+                    <source type="image/png" srcset="./assets/blog.png">
+                    <img src="./assets/blog.png" alt="watch on hand">
+                </picture>
+            </div>
+            <div class="blog__content">
+                <h2 class="blog__content-title">Blog</h2>
+                <p class="blog__content-text">Jest to miejsce, w którym znajdziesz wiele wartościowych informacji na
+                    temat
+                    zegarków – zarówno dla miłośników klasyki, jak i fanów nowoczesnych, sportowych modeli.</p>
+                <a href="#" class="blog__content-link">Czytaj więcej</a>
+            </div>
+        </section>
+
+
+
+
+        <section class="brands">
+            <div class="brands__image">
+                <picture>
+                    <source type="image/webp" srcset="./assets/edox.webp">
+                    <source type="image/png" srcset="./assets/edox.png">
+                    <img src="./assets/edox.png" alt="edox">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="./assets/atlantic.webp">
+                    <source type="image/png" srcset="./assets/atlantic.png">
+                    <img src="./assets/atlantic.png" alt="watch on magazine">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="./assets/squale.webp">
+                    <source type="image/png" srcset="./assets/squale.png">
+                    <img src="./assets/squale.png" alt="watch on magazine">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="./assets/orientstar.webp">
+                    <source type="image/png" srcset="./assets/orientstar.png">
+                    <img src="./assets/orientstar.png" alt="watch on magazine">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="./assets/orient.webp">
+                    <source type="image/png" srcset="./assets/orient.png">
+                    <img src="./assets/orient.png" alt="watch on magazine">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="./assets/gerlach.webp">
+                    <source type="image/png" srcset="./assets/gerlach.png">
+                    <img src="./assets/gerlach.png" alt="watch on magazine">
+                </picture>
+                <picture>
+                    <source type="image/webp" srcset="./assets/balticus.webp">
+                    <source type="image/png" srcset="./assets/balticus.png">
+                    <img src="./assets/balticus.png" alt="watch on magazine">
+                </picture>
+            </div>
+        </section>
+        <section class="newsletter">
+            <h2 class="newsletter__title">5% na pierwsze zakupy</h2>
+            <p class="newsletter__text">Zapisz sie do newslettera i otrzymaj zniżkę na pierwsze zakupy</p>
+            <div class="newsletter__inputs">
+                <div class="newsletter__inputs-email">
+                    <input type="email" id="email" placeholder="Podaj swój adres e-mail" name="email" required> <button
+                        class="header__mobile-menu-find-button"><svg viewBox="0 0 22 10">
+                            <use href="./assets/arrow-right.svg#arrow-right" />
+                        </svg></button>
+                </div>
+                <div class="newsletter__inputs-checkbox">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="false">
+                    <label for="newsletter">
+                        Zgoda na przetwarzanie danych osobowych</label>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__item">
+            <div class="footer__item-title" id="footer-title">
+                <h2>Moje zamówienie</h2>
+            </div>
+            <ul class="footer__item-list" id="footer-list">
+                <li class="footer__item-list-link"><a href="#">Status zamówienia</a></li>
+                <li class="footer__item-list-link"><a href="#">Śledzenie przesyłki</a></li>
+                <li class="footer__item-list-link"> <a href="#">Chcę zareklamować towar</a></li>
+                <li class="footer__item-list-link"> <a href="#">Chcę zwrócić towar</a></li>
+                <li class="footer__item-list-link"> <a href="#">Chcę wymienić towar</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item-title" id="footer-title">
+                <h2>Moje konto</h2>
+            </div>
+            <ul class="footer__item-list" id="footer-list">
+                <li class="footer__item-list-link"><a href="#">Zarejestruj się</a></li>
+                <li class="footer__item-list-link"> <a href="#">Moje zamówienia</a></li>
+                <li class="footer__item-list-link"> <a href="#">Koszyk</a></li>
+                <li class="footer__item-list-link"> <a href="#">Ulubione</a></li>
+                <li class="footer__item-list-link"> <a href="#">Historia transakcji</a></li>
+                <li class="footer__item-list-link"> <a href="#">Moje rabaty</a></li>
+                <li class="footer__item-list-link"> <a href="#">Newsletter</a></li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <div class="footer__item-title" id="footer-title">
+                <h2>O nas</h2>
+            </div>
+            <ul class="footer__item-list" id="footer-list">
+                <li class="footer__item-list-link"> <a href="#">Informaje o sklepie</a></li>
+                <li class="footer__item-list-link"><a href="#">Wysyłka</a></li>
+                <li class="footer__item-list-link"> <a href="#">Sposób płatnosci i
+                        prowizji</a></li>
+                <li class="footer__item-list-link"> <a href="#">Regulamin</a></li>
+                <li class="footer__item-list-link"> <a href="#">Polityka prywatności</a></li>
+                <li class="footer__item-list-link"> <a href="#">Odstąpienie od umowy</a></li>
+        </div>
+        </ul>
+        <div class="footer__item">
+            <div class="footer__item-title" id="footer-title">
+                <h2>Kontakt</h2>
+            </div>
+            <ul class="footer__item-list" id="footer-list">
+                <li class="footer__item-list-link">
+                    <p class="footer__contact-text">xxx</p>
+                </li>
+                <li class="footer__item-list-link">
+                    <p class="footer__contact-text">xxx</p>
+                </li>
+                <li class="footer__item-list-link">
+                    <p class="footer__contact-text">xxx</p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p class="copyright__text">Cena brutto (z VAT). Stawki dla konsumentów z Polski</p>
+        <picture>
+            <source type="image/webp" srcset="./assets/idosell.webp">
+            <source type="image/png" srcset="./assets/idosell.png">
+            <img src="./assets/idosell.png" alt="watch on magazine">
+        </picture>
+    </div>
+
+
+
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

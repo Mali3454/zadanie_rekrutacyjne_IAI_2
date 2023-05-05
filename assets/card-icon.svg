@@ -1,0 +1,6 @@
+<svg id="card" width="39" height="32" viewBox="0 0 39 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M36.375 1H2.625C1.58947 1 0.75 1.83947 0.75 2.875V29.125C0.75 30.1605 1.58947 31 2.625 31H36.375C37.4105 31 38.25 30.1605 38.25 29.125V2.875C38.25 1.83947 37.4105 1 36.375 1Z" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="10" y1="16" x2="29" y2="16" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+   <line x1="10" y1="12" x2="29" y2="12" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/> 
+    <line x1="10" y1="20" x2="29" y2="20" stroke="#1D1D1B" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
