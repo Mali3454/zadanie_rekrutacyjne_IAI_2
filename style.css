@@ -184,7 +184,7 @@ ol {
   width: 30px;
   padding: 3px;
 }
-.header__nav.--active {
+.header__nav--active {
   transform: translateX(0);
 }
 .header__nav-item {
@@ -960,7 +960,7 @@ ol {
     right: 3%;
   }
 }
-.news__item-arrow.left.--inactive {
+.news__item-arrow.left--inactive {
   display: none;
 }
 .news__item-arrow.right {
@@ -972,7 +972,7 @@ ol {
     left: 2%;
   }
 }
-.news__item-arrow.right.--inactive {
+.news__item-arrow.right--inactive {
   display: none;
 }
 .news__item-arrow:hover {
@@ -1372,7 +1372,7 @@ ol {
     border: none;
   }
 }
-.footer__item-list.--active {
+.footer__item-list--active {
   display: flex;
   flex-direction: column;
 }

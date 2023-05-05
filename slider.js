@@ -3,7 +3,7 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 	let touchStartX = 0
 	let touchEndX = 0
 
-	prevCarouselButton.classList.add('--inactive')
+	prevCarouselButton.classList.add('right--inactive')
 
 	const goToSlide = index => {
 		if (window.innerWidth < 530) {
@@ -14,22 +14,22 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 		currentIndex = index
 
 		if (currentIndex < 1) {
-			prevCarouselButton.classList.add('--inactive')
+			prevCarouselButton.classList.add('right--inactive')
 		} else {
-			prevCarouselButton.classList.remove('--inactive')
+			prevCarouselButton.classList.remove('right--inactive')
 		}
 
 		if (window.innerWidth < 530) {
 			if (currentIndex > slides.length - 2) {
-				nextCarouselButton.classList.add('--inactive')
+				nextCarouselButton.classList.add('left--inactive')
 			} else {
-				nextCarouselButton.classList.remove('--inactive')
+				nextCarouselButton.classList.remove('left--inactive')
 			}
 		} else {
 			if (currentIndex > slides.length - 3) {
-				nextCarouselButton.classList.add('--inactive')
+				nextCarouselButton.classList.add('left--inactive')
 			} else {
-				nextCarouselButton.classList.remove('--inactive')
+				nextCarouselButton.classList.remove('left--inactive')
 			}
 		}
 	}

@@ -15,18 +15,18 @@ const footerBtn = document.querySelectorAll('.footer__item-title')
 const footerList = document.querySelectorAll('.footer__item-list')
 
 menuBtn.addEventListener('click', e => {
-	menu.classList.add('--active')
+	menu.classList.add('header__nav--active')
 })
 
 closeBtn.addEventListener('click', e => {
-	menu.classList.remove('--active')
+	menu.classList.remove('header__nav--active')
 })
 
 footerBtn.forEach((elementBtn, index) => {
 	footerList.forEach((element, key) => {
 		if (index === key) {
 			elementBtn.addEventListener('click', e => {
-				element.classList.toggle('--active')
+				element.classList.toggle('footer__item-list--active')
 			})
 		}
 	})
