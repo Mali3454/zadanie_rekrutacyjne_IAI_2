@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="Sklep z zegarkami">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="./assets/logo.png">
@@ -38,30 +39,30 @@
                     <li class="header__nav-item"><a href='#' class="header__nav-link">Kontakt</a></li>
 
                 </ul>
-                <button class="header__nav-list-close" id="closeBtn"><svg viewBox="0 0 24 24">
+                <button class="header__nav-list-close" id="closeBtn"><svg viewBox="0 0 24 24" aria-label="Zamknij menu">
                         <use href="./assets/close-icon.svg#close" />
                     </svg></button>
             </nav>
             <div class="header__icon-block">
-                <a href="#" class="header__icon-block-link-find"><svg viewBox="0 0 17 18">
+                <a href="#" class="header__icon-block-link-find" aria-label="Szukaj"><svg viewBox="0 0 17 18">
                         <use href="./assets/find-icon.svg#find" />
                     </svg></a>
-                <a href="#" class="header__icon-block-link"><svg viewBox="0 0 18 18">
+                <a href="#" class="header__icon-block-link" aria-label="Moje konto"><svg viewBox="0 0 18 18">
                         <use href="./assets/account-icon.svg#account" />
                     </svg></a>
-                <a href="#" class="header__icon-block-link"><svg viewBox="0 0 21 18">
+                <a href="#" class="header__icon-block-link" aria-label="Ulubione"><svg viewBox="0 0 21 18">
                         <use href="./assets/heart-icon.svg#heart" />
                     </svg>
                     <div class="header__icon-block-link-notification"><span>2</span></div>
                 </a>
-                <a href="#" class="header__icon-block-link"><svg viewBox="0 0 20 18">
+                <a href="#" class="header__icon-block-link" aria-label="Koszyk"><svg viewBox="0 0 20 18">
                         <use href="./assets/bag-icon.svg#bag" />
                     </svg></a>
             </div>
         </div>
         <div class="header__mobile-menu">
             <div class="header__mobile-menu-hamburger">
-                <button class="header__mobile-menu-hamburger-button" id="menuBtn">
+                <button class="header__mobile-menu-hamburger-button" id="menuBtn" aria-label="Menu">
                     <svg viewBox="0 0 32 32">
                         <use href="./assets/menu-icon.svg#menu" />
                     </svg>
@@ -70,7 +71,7 @@
             </div>
             <div class="header__mobile-menu-find">
                 <input class="header__mobile-menu-find-input" type="text" id="input1" placeholder="Szukaj">
-                <button class="header__mobile-menu-find-button"><svg viewBox="0 0 17 18">
+                <button class="header__mobile-menu-find-button" aria-label="Szukaj"><svg viewBox="0 0 17 18">
                         <use href="./assets/find-icon.svg#find" />
                     </svg></button>
             </div>
@@ -82,7 +83,7 @@
                 <picture>
                     <source type="image/webp" srcset="./assets/hero.webp">
                     <source type="image/png" srcset="./assets/hero.png">
-                    <img src="./assets/hero.png" width="1512" height="480" alt="zegarek na ksiazce" >
+                    <img src="./assets/hero.png" width="1512" height="480" alt="zegarek na ksiazce">
                 </picture>
             </div>
             <div class="hero__content">
@@ -90,9 +91,9 @@
                 <a href="#" class="hero__content-link">Sprawdź ofertę</a>
             </div>
             <button class="hero__arrow left"><svg viewBox="0 0 22 10">
-                    <use href="./assets/arrow-hero-left.svg#arrow-hero-left" />
+                    <use href="./assets/arrow-hero-left.svg#arrow-hero-left" aria-label="Lewo" />
                 </svg></button>
-            <button class="hero__arrow right"><svg viewBox="0 0 22 10">
+            <button class="hero__arrow right"><svg viewBox="0 0 22 10" aria-label="Prawo">
                     <use href="./assets/arrow-hero-right.svg#arrow-hero-right" />
                 </svg></button>
         </section>
@@ -129,13 +130,14 @@
                         <picture>
                             <source type="image/webp" srcset="./assets/for-her.webp">
                             <source type="image/png" srcset="./assetss/for_her.png">
-                            <img src="./assets/for_her.png" width="685" height="400" alt="zegarek damski" >
+                            <img src="./assets/for_her.png" width="685" height="400" alt="zegarek damski">
                         </picture>
                     </div>
                     <a href="" class="products__item-link">
                         <p class="products__item-text">Dla niej</p>
                     </a>
-                    <button id="product-arrow-right" class="products__item-arrow left"><svg viewBox="0 0 22 10">
+                    <button id="product-arrow-right" class="products__item-arrow left"><svg viewBox="0 0 22 10"
+                            aria-label="Prawo">
                             <use href="./assets/arrow-hero-right.svg#arrow-hero-right" />
                         </svg>
                     </button>
@@ -145,13 +147,14 @@
                         <picture>
                             <source type="image/webp" srcset="./assets/for-him.webp">
                             <source type="image/png" srcset="./assets/for_him.png">
-                            <img src="./assets/for_him.png" width="685" height="400" alt="zegarek meski" >
+                            <img src="./assets/for_him.png" width="685" height="400" alt="zegarek meski">
                         </picture>
                     </div>
                     <a href="" class="products__item-link">
                         <p class="products__item-text">Dla niego</p>
                     </a>
-                    <button id="product-arrow-left" class="products__item-arrow right"><svg viewBox="0 0 22 10">
+                    <button id="product-arrow-left" class="products__item-arrow right"><svg viewBox="0 0 22 10"
+                            aria-label="Lewo">
                             <use href="./assets/arrow-hero-left.svg#arrow-hero-left" />
                         </svg>
                     </button>
@@ -188,7 +191,7 @@
                             <source type="image/webp" srcset="./assets/watch1.webp">
                             <source type="image/png" srcset="./assetss/watch1.png">
                             <img src="./assets/watch1.png" width="300" height="300" alt="zegarek" loading="lazy">
-                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16">
+                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16" aria-label="Ulubione">
                                 <use href="./assets/heart2-icon.svg#heart2" />
                             </svg> </button>
 
@@ -205,7 +208,8 @@
                             <source type="image/webp" srcset="./assets/watch2.webp">
                             <source type="image/png" srcset="./assetss/watch2.png">
                             <img src="./assets/watch2.png" width="200" height="300" alt="zegarek" loading="lazy">
-                        </picture> <button class="news__item-like"><svg fill="#fff" viewBox="0 0 18 16">
+                        </picture> <button class="news__item-like" aria-label="Ulubione"><svg fill="#fff"
+                                viewBox="0 0 18 16">
                                 <use href="./assets/heart2-icon.svg#heart2" />
                             </svg> </button>
 
@@ -222,7 +226,7 @@
                             <source type="image/webp" srcset="./assets/watch3.webp">
                             <source type="image/png" srcset="./assetss/watch3.png">
                             <img src="./assets/watch3.png" width="300" height="300" alt="zegarek" loading="lazy">
-                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16">
+                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16" aria-label="Ulubione">
                                 <use href="./assets/heart2-icon.svg#heart2" />
                             </svg> </button>
 
@@ -238,7 +242,7 @@
                             <source type="image/webp" srcset="./assets/watch4.webp">
                             <source type="image/png" srcset="./assetss/watch4.png">
                             <img src="./assets/watch4.png" width="300" height="300" alt="zegarek" loading="lazy">
-                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16">
+                        </picture> <button class="news__item-like"><svg viewBox="0 0 18 16" aria-label="Ulubione">
                                 <use href="./assets/heart2-icon.svg#heart2" />
                             </svg> </button>
 
@@ -252,11 +256,11 @@
 
             </div>
 
-            <button id="news-arrow-left" class="news__item-arrow right"><svg viewBox="0 0 22 10">
+            <button id="news-arrow-left" class="news__item-arrow right" aria-label="Prawo"><svg viewBox="0 0 22 10">
                     <use href="./assets/arrow-left.svg#arrow-left" />
                 </svg>
             </button>
-            <button id="news-arrow-right" class="news__item-arrow left"><svg viewBox="0 0 22 10">
+            <button id="news-arrow-right" class="news__item-arrow left"><svg viewBox="0 0 22 10" aria-label="Lewo">
                     <use href="./assets/arrow-right.svg#arrow-right" />
                 </svg>
             </button>
@@ -326,13 +330,13 @@
             <div class="newsletter__inputs">
                 <div class="newsletter__inputs-email">
                     <input type="email" id="email" placeholder="Podaj swój adres e-mail" name="email" required> <button
-                        class="header__mobile-menu-find-button"><svg viewBox="0 0 22 10">
+                        class="header__mobile-menu-find-button"><svg viewBox="0 0 22 10" aria-label="Wyslij">
                             <use href="./assets/arrow-right.svg#arrow-right" />
                         </svg></button>
                 </div>
                 <div class="newsletter__inputs-checkbox">
                     <input type="checkbox" id="newsletter" name="newsletter" value="false">
-                    <label for="newsletter">
+                    <label for="newsletter" aria-labelledby="Zatwierdz">
                         Zgoda na przetwarzanie danych osobowych</label>
                 </div>
             </div>
