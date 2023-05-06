@@ -13,13 +13,19 @@ const prevNewsButton = document.querySelector('#news-arrow-left')
 const nextNewsButton = document.querySelector('#news-arrow-right')
 const footerBtn = document.querySelectorAll('.footer__item-title')
 const footerList = document.querySelectorAll('.footer__item-list')
+const overlay = document.querySelector('#overlay')
+const body = document.querySelector('body')
 
 menuBtn.addEventListener('click', e => {
 	menu.classList.add('header__nav--active')
+	overlay.classList.add('overlay--active')
+	body.classList.add('menu--active')
 })
 
 closeBtn.addEventListener('click', e => {
 	menu.classList.remove('header__nav--active')
+	overlay.classList.remove('overlay--active')
+	body.classList.remove('menu--active')
 })
 
 footerBtn.forEach((elementBtn, index) => {
@@ -30,6 +36,14 @@ footerBtn.forEach((elementBtn, index) => {
 			})
 		}
 	})
+})
+
+document.addEventListener('click', e => {
+	if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
+		menu.classList.remove('header__nav--active')
+		body.classList.remove('menu--active')
+		overlay.classList.remove('overlay--active')
+	}
 })
 
 slider(carouselProducts, slidesProduct, prevProductButton, nextProductButton, false)

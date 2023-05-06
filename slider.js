@@ -4,10 +4,13 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 	let touchEndX = 0
 
 	prevCarouselButton.classList.add('right--inactive')
+	console.log(slides.length)
 
 	const goToSlide = index => {
 		if (window.innerWidth < 530) {
 			carousel.style.transform = `translateX(${-index * 100}%)`
+		} else if (window.innerWidth > 992) {
+			carousel.style.transform = `translateX(${-index * 25}%)`
 		} else {
 			carousel.style.transform = `translateX(${-index * 50}%)`
 		}
@@ -37,6 +40,10 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 	const nextSlide = () => {
 		if (window.innerWidth < 530) {
 			if (currentIndex < slides.length - 1) {
+				goToSlide(currentIndex + 1)
+			}
+		} else if (window.innerWidth > 992) {
+			if (currentIndex < slides.length - 4) {
 				goToSlide(currentIndex + 1)
 			}
 		} else {
