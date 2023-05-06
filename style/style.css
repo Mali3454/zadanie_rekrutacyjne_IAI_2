@@ -289,13 +289,8 @@ ol {
   }
 }
 .header__logo img {
-  height: 40px;
+  height: 52px;
   cursor: pointer;
-}
-@media (min-width: 650px) {
-  .header__logo img {
-    height: 52px;
-  }
 }
 .header__icon-block {
   display: flex;
