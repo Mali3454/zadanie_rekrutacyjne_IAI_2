@@ -223,7 +223,7 @@ ol {
   transform: translateY(-50%);
   width: 16px;
   height: 16px;
-  background-image: url('assets/arrow-menu.svg#arrow-menu');
+  background-image: url('../assets/arrow-menu.svg#arrow-menu');
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 18px;
