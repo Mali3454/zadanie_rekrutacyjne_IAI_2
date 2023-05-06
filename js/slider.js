@@ -1,11 +1,15 @@
 export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton, isActiveInDesktopView) => {
+	// Initialize variables to keep track of slider state
 	let currentIndex = 0
 	let touchStartX = 0
 	let touchEndX = 0
 
+	// Set the initial state of the slider
 	prevCarouselButton.classList.add('right--inactive')
 
+	// Define a function to move the slider to a specific slide
 	const goToSlide = index => {
+		// Set the transform property of the carousel element based on the current screen width and slide index
 		if (window.innerWidth < 530) {
 			carousel.style.transform = `translateX(${-index * 100}%)`
 		} else if (window.innerWidth > 992) {
@@ -13,8 +17,9 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 		} else {
 			carousel.style.transform = `translateX(${-index * 50}%)`
 		}
-		currentIndex = index
 
+		// Update the current index variable and add/remove classes on the previous/next buttons as needed
+		currentIndex = index
 		if (currentIndex < 1) {
 			prevCarouselButton.classList.add('right--inactive')
 		} else {
@@ -36,6 +41,7 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 		}
 	}
 
+	// Define a function to move the slider to the next slide
 	const nextSlide = () => {
 		if (window.innerWidth < 530) {
 			if (currentIndex < slides.length - 1) {
@@ -52,12 +58,14 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 		}
 	}
 
+	// Define a function to move the slider to the previous slide
 	const prevSlide = () => {
 		if (currentIndex > 0) {
 			goToSlide(currentIndex - 1)
 		}
 	}
 
+	// This code handles touch events, click events on previous and next buttons, and window resizing events for the carousel slider
 	carousel.addEventListener(
 		'touchstart',
 		e => {
@@ -71,6 +79,7 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 		e => {
 			touchEndX = e.changedTouches[0].clientX
 
+			
 			if (isActiveInDesktopView) {
 				if (touchEndX - touchStartX > 50) {
 					prevSlide()
