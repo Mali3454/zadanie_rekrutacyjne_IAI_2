@@ -58,33 +58,45 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 		}
 	}
 
-	carousel.addEventListener('touchstart', e => {
-		touchStartX = e.touches[0].clientX
-	})
+	carousel.addEventListener(
+		'touchstart',
+		e => {
+			touchStartX = e.touches[0].clientX
+		},
+		{ passive: true }
+	)
 
-	carousel.addEventListener('touchend', e => {
-		touchEndX = e.changedTouches[0].clientX
+	carousel.addEventListener(
+		'touchend',
+		e => {
+			touchEndX = e.changedTouches[0].clientX
 
-		if (isActiveInDesktopView) {
-			if (touchEndX - touchStartX > 50) {
-				prevSlide()
-			} else if (touchStartX - touchEndX > 50) {
-				nextSlide()
+			if (isActiveInDesktopView) {
+				if (touchEndX - touchStartX > 50) {
+					prevSlide()
+				} else if (touchStartX - touchEndX > 50) {
+					nextSlide()
+				}
+			} else {
+				if (touchEndX - touchStartX > 50 && window.innerWidth < 530) {
+					prevSlide()
+				} else if (touchStartX - touchEndX > 50 && window.innerWidth < 530) {
+					nextSlide()
+				}
 			}
-		} else {
-			if (touchEndX - touchStartX > 50 && window.innerWidth < 530) {
-				prevSlide()
-			} else if (touchStartX - touchEndX > 50 && window.innerWidth < 530) {
-				nextSlide()
-			}
-		}
-	})
+		},
+		{ passive: true }
+	)
 
 	prevCarouselButton.addEventListener('click', prevSlide)
 
 	nextCarouselButton.addEventListener('click', nextSlide)
 
-	window.addEventListener('resize', e => {
-		goToSlide(0)
-	})
+	window.addEventListener(
+		'resize',
+		e => {
+			goToSlide(0)
+		},
+		{ passive: true }
+	)
 }

@@ -20,20 +20,20 @@ menuBtn.addEventListener('click', e => {
 	menu.classList.add('header__nav--active')
 	overlay.classList.add('overlay--active')
 	body.classList.add('menu--active')
-})
+},{passive: true})
 
 closeBtn.addEventListener('click', e => {
 	menu.classList.remove('header__nav--active')
 	overlay.classList.remove('overlay--active')
 	body.classList.remove('menu--active')
-})
+},{passive: true})
 
 footerBtn.forEach((elementBtn, index) => {
 	footerList.forEach((element, key) => {
 		if (index === key) {
 			elementBtn.addEventListener('click', e => {
 				element.classList.toggle('footer__item-list--active')
-			})
+			},{passive: true})
 		}
 	})
 })
@@ -44,7 +44,7 @@ document.addEventListener('click', e => {
 		body.classList.remove('menu--active')
 		overlay.classList.remove('overlay--active')
 	}
-})
+},{passive: true})
 
 slider(carouselProducts, slidesProduct, prevProductButton, nextProductButton, false)
 slider(carouselNews, slidesNews, prevNewsButton, nextNewsButton, true)
