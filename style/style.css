@@ -1431,6 +1431,12 @@ ol {
 .footer__item-title h2:hover {
   background-color: #efefef42;
 }
+@media (min-width: 530px) {
+  .footer__item-title h2:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+}
 .footer__item-title ::after {
   content: '';
   position: absolute;
@@ -1481,12 +1487,20 @@ ol {
 .footer__item-list-link:hover {
   background-color: #efefef42;
 }
+@media (min-width: 530px) {
+  .footer__item-list-link:hover {
+    text-decoration: underline;
+  }
+}
 .footer__item-list-link a {
   color: #efefef;
 }
 @media (min-width: 530px) {
   .footer__item-list-link a {
     font-size: 12px;
+  }
+  .footer__item-list-link a:hover {
+    text-decoration: underline;
   }
 }
 .footer__item-list-link p {
@@ -1495,6 +1509,9 @@ ol {
 @media (min-width: 530px) {
   .footer__item-list-link p {
     font-size: 12px;
+  }
+  .footer__item-list-link p:hover {
+    text-decoration: underline;
   }
 }
 .copyright {
