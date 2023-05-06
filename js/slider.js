@@ -4,7 +4,6 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 	let touchEndX = 0
 
 	prevCarouselButton.classList.add('right--inactive')
-	console.log(slides.length)
 
 	const goToSlide = index => {
 		if (window.innerWidth < 530) {

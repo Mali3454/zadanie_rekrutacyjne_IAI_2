@@ -1,31 +1,31 @@
 @font-face {
   font-family: 'Aktiv Grotesk';
-  src: url('/fonts/AktivGroteskCorp-Regular.woff2') format('woff2'), url('fonts/AktivGroteskCorp-Regular.woff') format('woff');
+  src: url('../fonts/AktivGroteskCorp-Regular.woff2') format('woff2'), url('../fonts/AktivGroteskCorp-Regular.woff') format('woff');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Aktiv Grotesk';
-  src: url('fonts/AktivGroteskCorp-Medium.woff2') format('woff2'), url('fonts/AktivGroteskCorp-Medium.woff') format('woff');
+  src: url('../fonts/AktivGroteskCorp-Medium.woff2') format('woff2'), url('../fonts/AktivGroteskCorp-Medium.woff') format('woff');
   font-weight: 500;
 }
 @font-face {
   font-family: 'Aktiv Grotesk';
-  src: url('/fonts//AktivGroteskCorp-Bold.woff2') format('woff2'), url('fonts/AktivGroteskCorp-Regular.woff') format('woff');
+  src: url('../fonts//AktivGroteskCorp-Bold.woff2') format('woff2'), url('../fonts/AktivGroteskCorp-Regular.woff') format('woff');
   font-weight: 700;
 }
 @font-face {
   font-family: 'Abril Display';
-  src: url('fonts/AbrilDisplay-Regular.woff2') format('woff2'), url('fonts/AbrilDisplay-Regular.woff') format('woff');
+  src: url('../fonts/AbrilDisplay-Regular.woff2') format('woff2'), url('../fonts/AbrilDisplay-Regular.woff') format('woff');
   font-weight: 400;
 }
 @font-face {
   font-family: 'Abril Display';
-  src: url('fonts/AbrilDisplay-Bold.woff2') format('woff2'), url('fonts/AbrilDisplay-Bold.woff') format('woff');
+  src: url('../fonts/AbrilDisplay-Bold.woff2') format('woff2'), url('../fonts/AbrilDisplay-Bold.woff') format('woff');
   font-weight: 500;
 }
 @font-face {
   font-family: 'Abril Display';
-  src: url('fonts/AbrilDisplay-ExtraBold.woff2') format('woff2'), url('fonts/AbrilDisplay-ExtraBold.woff') format('woff');
+  src: url('../fonts/AbrilDisplay-ExtraBold.woff2') format('woff2'), url('../fonts/AbrilDisplay-ExtraBold.woff') format('woff');
   font-weight: 700;
 }
 * {
@@ -1195,13 +1195,13 @@ ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
     height: auto;
     margin-bottom: 20px;
   }
 }
 @media (min-width: 1412px) {
   .brands {
+    padding: 0;
     height: 110px;
     margin-bottom: 0;
   }
@@ -1329,6 +1329,7 @@ ol {
 .newsletter__inputs-checkbox label {
   color: #efefef;
   font-size: 11px;
+  cursor: pointer;
 }
 @media (min-width: 992px) {
   .newsletter__inputs-checkbox label {
@@ -1355,6 +1356,7 @@ ol {
   height: 12px;
   border: 1px solid #d7d7d7;
   border-radius: 3px;
+  cursor: pointer;
 }
 .newsletter__inputs-checkbox input:checked:before {
   content: '✓';
