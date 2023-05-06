@@ -667,7 +667,7 @@ ol {
 @media (min-width: 992px) {
   .products__item {
     width: 100%;
-    max-height: auto;
+    max-height: none;
     height: auto;
     margin-top: 45px;
   }
