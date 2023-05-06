@@ -1224,9 +1224,6 @@ ol {
     gap: 87px;
   }
 }
-.brands__image img {
-  height: 35px;
-}
 .newsletter {
   margin: 20px 0 0 0;
   display: flex;
