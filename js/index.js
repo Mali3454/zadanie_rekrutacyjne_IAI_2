@@ -17,6 +17,10 @@ const footerBtn = document.querySelectorAll('.footer__item-title')
 const footerList = document.querySelectorAll('.footer__item-list')
 const overlay = document.querySelector('#overlay')
 const body = document.querySelector('body')
+const carouselHero = document.querySelector('#hero-carousel')
+const slidesHero = document.querySelectorAll('.hero__image-slide')
+const prevHeroButton = document.querySelector('#hero-arrow-left')
+const nextHeroButton = document.querySelector('#hero-arrow-right')
 
 // Add event listener to menu button to toggle menu on and off
 menuBtn.addEventListener(
@@ -40,7 +44,7 @@ closeBtn.addEventListener(
 	{ passive: true }
 )
 
-// Add event listener to each footer button to toggle its 
+// Add event listener to each footer button to toggle its
 footerBtn.forEach((elementBtn, index) => {
 	footerList.forEach((element, key) => {
 		if (index === key) {
@@ -69,5 +73,6 @@ document.addEventListener(
 )
 
 // Call slider function to initialize the carousels
-slider(carouselProducts, slidesProduct, prevProductButton, nextProductButton, false)
-slider(carouselNews, slidesNews, prevNewsButton, nextNewsButton, true)
+slider(carouselProducts, slidesProduct, prevProductButton, nextProductButton, 'product')
+slider(carouselHero, slidesHero, prevHeroButton, nextHeroButton, 'hero')
+slider(carouselNews, slidesNews, prevNewsButton, nextNewsButton, 'news')

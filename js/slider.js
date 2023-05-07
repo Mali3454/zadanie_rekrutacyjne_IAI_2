@@ -1,4 +1,4 @@
-export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton, isActiveInDesktopView) => {
+export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton, type) => {
 	// Initialize variables to keep track of slider state
 	let currentIndex = 0
 	let touchStartX = 0
@@ -10,7 +10,7 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 	// Define a function to move the slider to a specific slide
 	const goToSlide = index => {
 		// Set the transform property of the carousel element based on the current screen width and slide index
-		if (window.innerWidth < 530) {
+		if (window.innerWidth < 530 || type === 'hero') {
 			carousel.style.transform = `translateX(${-index * 100}%)`
 		} else if (window.innerWidth > 992) {
 			carousel.style.transform = `translateX(${-index * 25}%)`
@@ -32,6 +32,12 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 			} else {
 				nextCarouselButton.classList.remove('left--inactive')
 			}
+		} else if (window.innerWidth > 992) {
+			if (currentIndex > slides.length - 5) {
+				nextCarouselButton.classList.add('left--inactive')
+			} else {
+				nextCarouselButton.classList.remove('left--inactive')
+			}
 		} else {
 			if (currentIndex > slides.length - 3) {
 				nextCarouselButton.classList.add('left--inactive')
@@ -39,11 +45,12 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 				nextCarouselButton.classList.remove('left--inactive')
 			}
 		}
+		console.log(currentIndex)
 	}
 
 	// Define a function to move the slider to the next slide
 	const nextSlide = () => {
-		if (window.innerWidth < 530) {
+		if (window.innerWidth < 530 || type === 'hero') {
 			if (currentIndex < slides.length - 1) {
 				goToSlide(currentIndex + 1)
 			}
@@ -79,8 +86,7 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 		e => {
 			touchEndX = e.changedTouches[0].clientX
 
-			
-			if (isActiveInDesktopView) {
+			if (type === 'news' || type === 'hero') {
 				if (touchEndX - touchStartX > 50) {
 					prevSlide()
 				} else if (touchStartX - touchEndX > 50) {
