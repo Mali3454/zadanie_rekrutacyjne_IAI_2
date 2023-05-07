@@ -45,7 +45,6 @@ export const slider = (carousel, slides, prevCarouselButton, nextCarouselButton,
 				nextCarouselButton.classList.remove('left--inactive')
 			}
 		}
-		console.log(currentIndex)
 	}
 
 	// Define a function to move the slider to the next slide
